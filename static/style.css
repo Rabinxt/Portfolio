@@ -8,7 +8,7 @@ html{
 
 body{
     background: #610b6c;
-    background-image: url("../main1.jpg");
+    background-image: url("../images/main1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -76,7 +76,7 @@ nav a::after {
     height: 2px;
     background: linear-gradient(to right, #FFD700, #FF4500);
     transform: scaleX(0);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 nav a:hover::after {
@@ -325,9 +325,3 @@ footer p {
 footer p span {
     color: #FF6347;
 }
-
-
-
-
-
-
