@@ -83,6 +83,10 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+nav a:hover{
+    color: rgb(181, 44, 208);
+}
+
 #hero{
     width: 100%;
     height: 600px;
@@ -344,4 +348,95 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+
+    nav ul {
+        width: 90%;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    #hero {
+        padding-top: 5.5rem; /* To ensure hero content starts below the fixed header */
+    }
+
+    #hero .content {
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #hero .content h1, .content p {
+        width: 70%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    .about {
+        padding-top: 40px;
+    }
+
+    .schools {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .schools .school p {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #skills .skills-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .skills-list li {
+        margin: 5px;
+        width: 100%;
+        text-align: center;
+        transform: scale(0.9); /* Reduce size */
+    }
+
+    .skills-list img {
+        width: 60px; /* Adjust image size */
+        height: 60px; /* Adjust image size */
+    }
+
+    #contact .content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        margin-top: 10px;
+    }
 }
