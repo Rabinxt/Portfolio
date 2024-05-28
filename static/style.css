@@ -354,21 +354,25 @@ footer a:hover {
     header {
         flex-direction: row;
         align-items: center;
-        height: auto;
         position: fixed;
         width: 100%;
         z-index: 10;
+    }
+    nav{
+        display: flex;
+        width: 60%;
     }
 
     nav ul {
         width: 90%;
         justify-content: center;
-        gap: 15px;
+        gap: 10px;
         padding: 0;
     }
 
     #hero {
-        padding-top: 5.5rem; /* To ensure hero content starts below the fixed header */
+        padding-top: 5.5rem;
+        height: 90vh;
     }
 
     #hero .content {
@@ -387,6 +391,9 @@ footer a:hover {
         padding-bottom: 30px;
         align-items: center;
     }
+    #about{
+        height: 90vh;
+    }
     .about {
         padding-top: 40px;
     }
@@ -402,6 +409,9 @@ footer a:hover {
         height: auto;
         margin-bottom: 20px;
         text-align: center;
+    }
+    #skills{
+        height: 99vh;
     }
 
     #skills .skills-list {
