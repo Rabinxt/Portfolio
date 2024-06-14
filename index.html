@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rabin Chhatkuli - Programmer</title>
     <link rel="stylesheet" href="./static/style.css">
-
+    <link rel="icon" href="./images/Main_icon.png" type="image/png">
 </head>
 
 <body>
+
+    <body>
+        <div id="loading-screen">
+            <div class="loader">
+                <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                </div>
+                <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                </div>
+                <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                </div>
+                <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Your existing content here -->
+    </body>
+    
+
+
     <header>
-        <h4>Rabin</h4>
+        <img src="./images/Logo.png" alt="">
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -158,8 +185,15 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            window.addEventListener('load', function() {
+                loadingScreen.style.display = 'none';
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
