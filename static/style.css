@@ -495,7 +495,8 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}@media (max-width: 766px) {
+}
+@media (max-width: 768px) {
     header {
         height: 3.9rem;
         background-color: rgba(211, 16, 155, 0.4);
