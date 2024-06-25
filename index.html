@@ -52,8 +52,8 @@
 
     <section id="hero">
         <div class="content">
-                <h1>Rabin<span>Chhatkuli</span></h1>
-            <div class="p">
+            <h1>Rabin<span>Chhatkuli</span></h1>
+            <div class="paragraph">
                 <p class="first">Welcome to my portfolio! I'm</p>
                 <p class="third">Web Developer</p>
             </div>
@@ -92,68 +92,49 @@
 
     <section id="skills">
         <div class="content">
-            <h2>Skills</h2>
-            <ul class="skills-list">
+            <h2>Skills</h2><ul class="skills-list">
                 <li>
-                    <img src="https://skillicons.dev/icons?i=bootstrap" width="48" height="48" alt="Bootstrap" />
-                    <span>Bootstrap</span>
-                </li>
-                <li>
-                    <img src="https://skillicons.dev/icons?i=jquery" width="48" height="48" alt="jQuery" />
-                    <span>jQuery</span>
-                </li>
-                <li>
-                    <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="65" height="65" alt="MySQL" />
-                    <span>MySQL</span>
-                </li>
-                <li>
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-c-58-1175247.png?f=webp&w=256" width="65" height="65" alt="C" />
-                    <span>C</span>
-                </li>
-                <li>
-                    <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
-                    <span>HTML5</span>
-                </li>
-                <li>
-                    <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS" />
-                    <span>CSS</span>
-                </li>
-                <li>
-                    <img src="https://techstack-generator.vercel.app/js-icon.svg" width="65" height="65" alt="JavaScript" />
-                    <span>JavaScript</span>
-                </li>
-                <li>
-                    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" alt="React" />
-                    <span>React</span>
-                </li>
-                <li>
-                    <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
-                    <span>Tailwind CSS</span>
-                </li>
-                <li>
-                    <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" alt="Python" />
+                    <img src="images/python.png" width="58" height="58" alt="Python" />
                     <span>Python</span>
                 </li>
                 <li>
-                    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/seo-2148111-1805046.png?f=webp&w=256" width="65" height="65" alt="SEO" />
-                    <span>SEO</span>
+                    <img src="images/html.png" width="58" height="58" alt="HTML" />
+                    <span>HTML</span>
                 </li>
                 <li>
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-microsoft-excel-1411847-1194336.png?f=webp&w=256" width="65" height="65" alt="Excel" />
-                    <span>Excel</span>
+                    <img src="images/css.png" width="58" height="58" alt="CSS" />
+                    <span>CSS</span>
                 </li>
                 <li>
-
-                <li>
-                    <img src="https://www.telecomhall.net/uploads/db2683/original/2X/9/93768e7290bc8c8473a02561ac4e608642cfbaca.png" width="65" height="65" alt="Pip" />
-                    <span>pip</span>
+                    <img src="images/javascript.png" width="58" height="58" alt="JavaScript" />
+                    <span>JavaScript</span>
                 </li>
                 <li>
-                    <img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
-                    <span>Git</span>
+                    <img src="images/bootstrap.png" width="58" height="58" alt="Bootstrap" />
+                    <span>Bootstrap</span>
                 </li>
-
+                <li>
+                    <img src="images/tailwind.png" width="58" height="58" alt="Tailwind CSS" />
+                    <span>Tailwind CSS</span>
+                </li>
+                <li>
+                    <img src="images/react.png" width="58" height="58" alt="React" />
+                    <span>React</span>
+                </li>
+                <li>
+                    <img src="images/php.png" width="58" height="58" alt="PHP" />
+                    <span>PHP</span>
+                </li>
+                <li>
+                    <img src="images/django.png" width="58" height="58" alt="Django" />
+                    <span>Django</span>
+                </li>
+                <li>
+                    <img src="images/jquery.png" width="58" height="58" alt="jquery" />
+                    <span>Jquery</span>
+                </li>
             </ul>
+            
         </div>
     </section>
     
@@ -199,6 +180,24 @@
                 loadingScreen.style.display = 'none';
             });
         });
+        const roleElement = document.querySelector('.role');
+        const roles = ['Software Developer', 'Designer', 'Data Scientist', 'Project Manager'];
+
+        function changeRole() {
+            const randomIndex = Math.floor(Math.random() * roles.length);
+            const newRole = roles[randomIndex];
+            
+            roleElement.classList.remove('fade-in');
+            void roleElement.offsetWidth;
+            roleElement.textContent = newRole;
+            roleElement.classList.add('fade-in');
+        }
+
+        setInterval(changeRole, 3000);
+
+        changeRole();
+
+
     </script>
     
 </body>
