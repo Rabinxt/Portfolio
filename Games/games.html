@@ -3,15 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .games-list {
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .game {
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .game:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .game img {
+            width: 250px;
+            height: 30vh;
+            border-radius: 10px ;
+            object-fit: cover;
+        }
+
+        .game h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .game button {
+            background-color: #ff3333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game button:hover {
+            background-color: #e60000;
+        }
+    </style>
 </head>
 <body>
     <div class="games-list">
-        <div class="game1">
-            
+        <div class="game">
+            <img src="rock_paper_scissor.png" alt="Rock Paper Scissors">
+            <h2>Rock Paper Scissors</h2>
+            <a href="rock_paper_scissor.html"><button>Play Now</button></a>
         </div>
-        <div class="game2">
-
+        <div class="game">
+            <img src="tic_tac-toe.png" alt="Tic Tac Toe">
+            <h2>Tic Tac Toe</h2>
+            <a href="tic_tac-toe.html"><button>Play Now</button></a>
         </div>
     </div>
 </body>
