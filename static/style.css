@@ -281,10 +281,9 @@ nav img {
 }
 
 #hero .content .paragraph .first {
-    font-size: 28px;
+    font-size: 27px;
     color: #ddd;
     margin-bottom: 5px;
-    animation: fadeIn 2s ease-in-out;
 }
 
 #hero .content .paragraph .third {
@@ -397,6 +396,10 @@ nav img {
     line-height: 1.6;
     color: #d0d0d0;
     text-align: left;
+    text-align: justify;
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 .school1 p strong ,.school2 p strong, .hobbie p strong{

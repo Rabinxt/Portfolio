@@ -180,8 +180,8 @@
                 loadingScreen.style.display = 'none';
             });
         });
-        const roleElement = document.querySelector('.role');
-        const roles = ['Software Developer', 'Designer', 'Data Scientist', 'Project Manager'];
+        const roleElement = document.querySelector('.third');
+        const roles = ['Software Developer', 'Designer', 'Data Scientist', 'Learner'];
 
         function changeRole() {
             const randomIndex = Math.floor(Math.random() * roles.length);
@@ -193,7 +193,7 @@
             roleElement.classList.add('fade-in');
         }
 
-        setInterval(changeRole, 3000);
+        setInterval(changeRole, 2000);
 
         changeRole();
 
