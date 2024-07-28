@@ -8,6 +8,7 @@ let currentPlayer = 'X';
 let boardState = ['', '', '', '', '', '', '', '', ''];
 let gameActive = true;
 
+
 board.addEventListener('click', handleCellClick);
 
 function handleCellClick(event) {
