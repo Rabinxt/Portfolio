@@ -640,25 +640,30 @@ footer a:hover {
 @media (max-width: 768px) {
     header {
         height: 3.9rem;
+        display: flex;
         justify-content: space-between;
         z-index: 999;
     }
+
     nav {
-        background-color: none;
-        width: 600px;
-        justify-content: space-evenly;
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     nav ul {
+        display: flex;
         flex-direction: row;
         gap: 24px;
-        align-items: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     nav ul li {
-        width: 280px;
-        margin: 4px 0;
-        width: 100%;
+        width: auto;
         text-align: center;
         border-radius: 3px;
         position: relative;
@@ -666,22 +671,22 @@ footer a:hover {
 
     nav ul li a span {
         display: none;
-        font-size: 9px;
+        font-size: 0.9rem;
         position: absolute;
-        bottom: -20px;
+        bottom: -2rem;
         left: 50%;
         transform: translateX(-50%);
         color: white;
-        padding-bottom: 50px;
+        padding: 0 0.5rem;
         border-radius: 3px;
         white-space: nowrap;
         opacity: 0;
-        transition: opacity 0.3s ease, top 0.3s ease;
+        transition: opacity 0.3s ease;
     }
 
     nav ul li a img {
-        height: 20px;
-        width: 20px;
+        height: 2rem;
+        width: 2rem;
     }
 
     nav ul li a:hover img {
@@ -695,17 +700,17 @@ footer a:hover {
 
     nav img {
         width: 90px;
-        height: 35px;
+        height: auto;
     }
 
-
     #hero {
-        height: 90vh;
+        height: 80vh;
     }
 
     #hero .content h1 {
-        width:350px;
-        font-size: 35px;
+        width: 90%;
+        max-width: 350px;
+        font-size: 2.2rem;
         margin: 0 auto;
         padding: 8px;
     }
@@ -713,32 +718,40 @@ footer a:hover {
     .content .paragraph .first {
         display: none;
     }
-    .content .paragraph .third{
+    .content .paragraph .third {
         font-size: 4vw;
     }
 
     .buttons {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .buttons button {
         margin: 10px 0;
+        width: 100%;
     }
-    #about{
-        width: 557px;
+
+    #about {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
         height: auto;
     }
+
     .abouts {
-        height: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .school1, .school2, .hobbie {
-        flex: 1 1 100%;
-        width: 500px;
+        width: 70%;
+        max-width: 500px;
         margin-bottom: 20px;
     }
+
     #skills {
         padding: 20px 0;
     }
@@ -753,24 +766,27 @@ footer a:hover {
 
     .skills-list li {
         margin: 10px 0;
+        width: 100%;
     }
 
     #projects .content {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        width: 100%;
     }
 
     #projects .project1, #projects .project2 {
         width: 90%;
-        max-width: none;
+        max-width: 600px;
     }
 
     #contact {
-        width: 408px;
+        width: 90%;
+        max-width: 600px;
         margin: 0 auto;
         padding: 20px 0;
-        padding-left: 10px;
     }
 
     #contact .content {
@@ -778,15 +794,21 @@ footer a:hover {
     }
 
     footer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
     .footer-left, .footer-right {
+        display: flex;
         align-items: center;
+        width: 100%;
+        max-width: 600px;
     }
 
     .footer-right {
         text-align: center;
     }
 }
+
