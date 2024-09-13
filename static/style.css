@@ -674,6 +674,7 @@ footer a:hover {
 @media (max-width: 768px) {
     header {
         height: 3.9rem;
+        width: auto;
         display: flex;
         justify-content: space-between;
         z-index: 999;
