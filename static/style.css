@@ -132,21 +132,24 @@ nav img {
     font-size: 27px;
     color: #ddd;
     margin-bottom: 5px;
+    background: linear-gradient(315deg, #8c9397, #2f2322);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #hero .content .paragraph .third {
     font-size: 32px;
     color: #fff;
     font-weight: bold;
-    background: linear-gradient(315deg, #a5a7a8, #ba2e1c);
+    background: linear-gradient(315deg, #8c9397, #a44336);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textGlow 2s ease-in-out infinite alternate;
 }
 
-.paragraph .third{
-    animation: fadeIn 0.5s ease-out;
-}
+.paragraph .third {
+        font-size: 24px;
+        font-weight: bold;
+    }
 
 #hero .content .buttons {
     display: flex;
@@ -180,15 +183,6 @@ nav img {
     100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes textGlow {
-    0% { text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ba2e1c, 0 0 5px #ba2e1c, 0 0 6px #ba2e1c, 0 0 7px #ba2e1c; }
-    100% { text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #ba2e1c, 0 0 10px #ba2e1c, 0 0 12px #ba2e1c, 0 0 14px #ba2e1c; }
-}
 #about {
     width: 96.7%;
     height: 90vh;

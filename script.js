@@ -1,22 +1,24 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const loadingScreen = document.getElementById('loading-screen');
-    window.addEventListener('load', function() {
-        loadingScreen.style.display = 'none';
-    });
-});
-const roleElement = document.querySelector('.third');
-const roles = ['Software Developer', 'Designer', 'Data Scientist', 'Learner'];
+window.onload = function() {
+    const roleElement = document.querySelector('.third');
+    const roles = ['Software Developer', 'Designer', 'Data Scientist', 'Learner'];
+    let currentRoleIndex = 0;
+    let charIndex = 0;
 
-function changeRole() {
-    const randomIndex = Math.floor(Math.random() * roles.length);
-    const newRole = roles[randomIndex];
-    
-    roleElement.classList.remove('fade-in');
-    void roleElement.offsetWidth;
-    roleElement.textContent = newRole;
-    roleElement.classList.add('fade-in');
-}
+    function typeRole() {
+        const currentRole = roles[currentRoleIndex];
+        roleElement.textContent = currentRole.slice(0, charIndex + 1) +'|';
+        charIndex++;
 
-setInterval(changeRole, 2000);
+        if (charIndex < currentRole.length) {
+            setTimeout(typeRole, 150); // Continue typing the next character
+        } else {
+            setTimeout(() => {
+                currentRoleIndex = (currentRoleIndex + 1) % roles.length; // Move to next role
+                charIndex = 0;
+                setTimeout(typeRole, 1000); 
+            }, 2000); 
+        }
+    }
 
-changeRole();
+    typeRole(); 
+};
