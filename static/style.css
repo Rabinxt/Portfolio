@@ -181,7 +181,6 @@ nav img {
 }
 
 #about {
-    width: 96.7%;
     height: 90vh;
     padding: 50px 20px;
     background: linear-gradient(135deg, #1e1e1e, #282828);
@@ -282,9 +281,8 @@ nav img {
     font-size: 18px;
 }
 
-/* projects */
+
 #projects {
-    width: 96.7%;
     height: 90vh;
     padding: 50px 20px;
     background: linear-gradient(135deg, #1e1e1e, #282828);
@@ -401,6 +399,7 @@ nav img {
 #contact {
     padding: 50px 0;
     color: white;
+    background: linear-gradient(135deg, #1e1e1e, #282828);
     text-align: center;
 }
 #contact .content {
@@ -604,7 +603,6 @@ footer a:hover {
     }
 
     #about {
-        width: 100%;
         margin: 0 auto;
         height: auto;
     }
@@ -639,8 +637,6 @@ footer a:hover {
     }
     #projects{
         height: auto;
-        width: 90%;
-        max-width: 600px;
     }
 
     #projects .content {
@@ -657,7 +653,6 @@ footer a:hover {
     }
 
     #contact {
-        width: 90%;
         max-width: 600px;
         margin: 0 auto;
         padding: 20px 0;
