@@ -508,7 +508,6 @@ footer a:hover {
 @media (max-width: 768px) {
     header {
         height: 3.9rem;
-        width: auto;
         display: flex;
         justify-content: space-between;
         z-index: 999;
@@ -516,7 +515,6 @@ footer a:hover {
 
     nav {
         background-color: transparent;
-        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -524,7 +522,7 @@ footer a:hover {
     nav ul {
         display: flex;
         flex-direction: row;
-        gap: 14px;
+        gap: 9px;
         align-items: center;
         padding: 0;
         margin: 0;
@@ -532,7 +530,6 @@ footer a:hover {
     }
 
     nav ul li {
-        width: auto;
         text-align: center;
         border-radius: 3px;
         position: relative;
@@ -588,7 +585,7 @@ footer a:hover {
         display: none;
     }
     .content .paragraph .third {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .buttons {
