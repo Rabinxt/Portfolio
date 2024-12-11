@@ -167,6 +167,17 @@ nav img {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+#hero .content .buttons button a{
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 #hero .content .buttons button:hover {
     background-color: #a52218;
     transform: scale(1.05);
@@ -505,24 +516,28 @@ footer a:hover {
         transform: rotate(360deg);
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     header {
         height: 3.9rem;
+        width: 414px;
         display: flex;
         justify-content: space-between;
         z-index: 999;
     }
 
     nav {
+        max-width: 350px ;
         background-color: transparent;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
     nav ul {
         display: flex;
         flex-direction: row;
-        gap: 9px;
+        gap: 4px;
         align-items: center;
         padding: 0;
         margin: 0;
@@ -533,6 +548,10 @@ footer a:hover {
         text-align: center;
         border-radius: 3px;
         position: relative;
+    }
+    .image11{
+        height: 40%;
+        width: 50%;
     }
 
     nav ul li a span {
@@ -562,6 +581,12 @@ footer a:hover {
     nav ul li a:hover span {
         display: block;
         opacity: 1;
+    }
+    .nav1{
+        gap: 2px;
+    }
+    .nav2{
+        gap: 2px;
     }
 
     nav img {
@@ -650,9 +675,15 @@ footer a:hover {
     }
 
     #contact {
-        max-width: 600px;
+        max-width: 390px;
         margin: 0 auto;
         padding: 20px 0;
+    }
+
+    textarea, 
+    input[type="text"] {
+        width: 350px;
+        font-size: 0.9em;
     }
 
     #contact .content {
