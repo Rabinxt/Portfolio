@@ -154,7 +154,7 @@ nav img {
     gap: 20px;
 }
 
-#hero .content .buttons button {
+#hero .content .buttons a {
     padding: 12px 25px;
     font-size: 18px;
     color: #000000;
@@ -167,18 +167,7 @@ nav img {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#hero .content .buttons button a{
-    text-decoration: none;
-    color: #000000;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    gap: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#hero .content .buttons button:hover {
+#hero .content .buttons a:hover {
     background-color: #a52218;
     transform: scale(1.05);
 }
